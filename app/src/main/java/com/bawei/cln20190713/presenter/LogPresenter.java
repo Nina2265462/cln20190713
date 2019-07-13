@@ -13,7 +13,7 @@ import java.util.HashMap;
  * */
 public class LogPresenter extends ILoginContract.ILonginPresenter {
     @Override
-    protected void login(HashMap<String, String> params) {
+    public void login(HashMap<String, String> params) {
         model.request(params, new LogCallBack() {
             @Override
             public void onSuccess(LoginEntity loginEntity) {
